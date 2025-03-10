@@ -6,6 +6,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Rubik+Glitch&display=swap" rel="stylesheet">
    
 <style>
+   .frame {
+    position: fixed;
+    width: 1100px;
+    height: 800px;
+    border: 1x solid clear;
+  }
+  
 html {
         background-image: url(DE9E30B6-3452-4176-AAFA-A8F8A633BF22_1_201_a.jpeg);
         background-size: cover;
@@ -14,16 +21,38 @@ html {
         background-repeat: no-repeat;
       }
   h1 {
+    position: relative;
+  }
+  .word1 {
+        position: absolute;
         padding: 50px;
-        left: 50px;
+        right: 20px;
         top: 100px;
         font-family: "Rubik Glitch", serif;
         font-size: 80px;
         display: inline;
         color: #ff75da;
-        z-index: 1;
   }
-  
+  .word2 {
+        position: absolute;
+        padding: 50px;
+        left: 370px;
+        top: 350px;
+        font-family: "Rubik Glitch", serif;
+        font-size: 80px;
+        display: inline;
+        color: #ff75da;
+  }
+  .word3 {
+        position: absolute;
+        padding: 50px;
+        right: 70px;
+        top: 600px;
+        font-family: "Rubik Glitch", serif;
+        font-size: 80px;
+        display: inline;
+        color: #ff75da;
+  }
   .spine {
     width: 300px;
     height: 170px;
@@ -174,10 +203,16 @@ html {
   </head>
    </html>
 
-<h1>BROWSE</h1>
-<h1>MY</h1>
-<h1>LIBRARY</h1>
 
+
+<div class="frame">
+  
+  <h1>
+    <span class="word1">BROWSE</span>
+    <span class="word2">MY</span>
+    <span class="word3">LIBRARY</span>
+  </h1>
+  
 <div class="spine book1"></div>
 <div class="spine book2"></div>
 <div class="spine book3"></div>
@@ -198,3 +233,4 @@ html {
 <div class="spine book18"></div>
 <div class="spine book19"></div>
 <div class="spine book20"></div>
+  </div>
