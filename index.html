@@ -21,7 +21,16 @@ html {
         background-repeat: no-repeat;
       }
   h1 {
-    position: relative;
+    .fixed-layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
   }
   .word1 {
         position: absolute;
@@ -212,7 +221,7 @@ html {
     <span class="word2">MY</span>
     <span class="word3">LIBRARY</span>
   </h1>
-  
+<center>
 <div class="spine book1"></div>
 <div class="spine book2"></div>
 <div class="spine book3"></div>
@@ -233,4 +242,5 @@ html {
 <div class="spine book18"></div>
 <div class="spine book19"></div>
 <div class="spine book20"></div>
+  </center>
   </div>
